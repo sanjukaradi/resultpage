@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url(calculator.jpg);
+            background-repeat: no-repeat;
+            background-position: top; 
+            background-size: cover;
+            font-size: 30px;
+            font-family: cursive;
+
+        }
+        div{
+            padding: 50px;
+            background-color: seashell;
+            border: 5px solid black;
+            border-radius: 30pt;
+            margin: 10px;
+            margin-left: 500px;
+            margin-right: 500px;
+            font-size: large;
+             }
+             div:hover{
+                background-image: url(plain.png);
+                cursor: ew-resize;
+                opacity: 1.0;
+                transition: 1s;
+             }
+             #ss{
+                background-color: blueviolet;
+                color:whitesmoke;
+
+             }
+             #ss:hover{
+                background-color: cadetblue;
+                cursor: pointer;
+                opacity: 1.0;
+                transition: 2s;
+                font-size: 10px;
+                
+             }
+             .sa{
+                background-color: violet;
+                color: azure;
+             }
+             
+             .sa:hover{
+                background-color: chocolate;
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 1s;
+                font-size: 10px;
+             }
+             #aq{
+                padding: 5px;
+                background-color: skyblue;
+                color: aliceblue;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin: 3px;
+                
+             }
+             #aq:hover{
+                background-color: brown;
+                color: black;
+                cursor: cell;
+                opacity: 1.0;
+                transition: 1s;
+             }
+             .aw{
+                padding: 5px;
+                background-color:skyblue;
+                color: aliceblue;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin: 3px;
+                
+             }
+             .aw:hover{
+                background-color: rgb(255, 0, 187);
+                color:gold ;
+                cursor: copy;
+                opacity: 1.0;
+                transition: 1s;
+             }
+             #ae{
+                padding: 5px;
+                background-color:skyblue;
+                color: aliceblue;
+                border: 2px solid black;
+                border-radius: 10px;
+                margin: 3px;
+                
+             }
+             #ae:hover{
+                background-color:darkgreen;
+                color:darkgray;
+                cursor: e-resize;
+                opacity: 1.0;
+                transition: 1s;
+             }
+             span{
+                background-color: whitesmoke;
+                color: orangered;
+                border-radius: 10px;
+             }
+             #a{
+                color: green;
+             }
+             .i{
+                color: blue;
+             }
+             
+            
+
+ </style>
+    
+</head>
+<body align="center"> 
+    <i><strong><u> <span id="a">: Percentage <span class="i">&</span>  </span>  <span> Calculator :</span></u></strong></i>
+    <div><table>
+        <tr>
+            <td id="aq">maximum marks </td>
+            <td><input type="text" id="mm"></td>
+        </tr>
+        <tr>
+            <td class="aw">obtained marks </td>
+            <td><input type="text" id="om"></td>
+        </tr>
+        <tr>
+            <td id="ae"> Percentage </td>
+           <td><input type="text" id="perc"> </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="bus()" id="ss">submit</button></td>
+        </tr>
+    </table>
+        
+    <script>
+        function bus()
+        {
+            document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mm").value*100)
+        
+        }
+
+    </script>
+    </div>
+</body>
+</html>

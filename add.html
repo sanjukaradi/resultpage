@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <label>enter 1st Number</label>
+    <input type="text" id="a">
+
+    <label>enter 2nd Number</label>
+    <input type="text" id="b">
+
+   
+
+    <button onclick="bus()">mul</button>
+    <label for="">Answer</label>
+     <h1 id="ans"></h1>
+     <script>
+        function bus(){
+            var a,b,sum;
+         a=parseInt(document.getElementById('a').value) 
+         b=parseInt(document.getElementById('b').value) 
+         sum=a*b;
+         document.getElementById('ans').innerHTML=sum
+        }
+
+     </script>    
+
+</body>
+</html>
